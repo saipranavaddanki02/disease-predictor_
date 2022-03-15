@@ -1,0 +1,33 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>Dropdown List</title>
+</head>
+<body>
+    <div class="login">
+		<h1> predict salary analysis </h1>
+    <form action="{{ url_for('predict')}}" method="post">
+
+		<input type="text" name="experience" placeholder="experience" required="required" />
+
+		<!-- <select name="experience" >
+			<option value="none" selected disabled hidden>Sympton 1</option>
+			<option value="volvo">Opel</option>
+			<option value="saab">Saab</option>
+			<option value="opel">dizziness</option>
+			<option value="audi">Audi</option>
+		  </select> -->
+
+		<input type="text" name="test score" placeholder="test score" required="required" />
+		<input type="text" name="s1" placeholder="interview score" required="required" />
+		<input type="text" name="interview score" placeholder="interview score" required="required" />
+		<input type="text" name="s2" placeholder="interview score" required="required" />
+
+		<button type="submit" class="btn btn-primary btn-large">predict</button>
+	</form>
+	<br>
+	<br>
+	{{ prediction_text }}
+	</div>
+</body>
+</html>
