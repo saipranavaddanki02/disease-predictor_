@@ -134,7 +134,7 @@ def naivebayes():
         if(predicted == a):
             output=disease[a]
 
-    return render_template('NaiveBayes.html', prediction_text='the dieseas must be : ${}'.format(output))
+    return render_template('DecisionTree.html', prediction_text='the dieseas must be : ${}'.format(output))
 
 
 if __name__=="__main__":
